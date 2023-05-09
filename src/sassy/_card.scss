@@ -40,11 +40,11 @@
 	}
 	h3 {
 		margin: 7px;
-		font-size: $font-size-accent;
+		font-size: $accent;
 	}
 	p {
 		margin: 7px;
-		font-size: $font-size-body;
+		font-size: $body;
 	}
 }
 /*text container*/
@@ -76,11 +76,11 @@
 		border-radius: 5px 5px 0 0;
 	}
 	h3 {
-		font-size: $font-size-accent;
+		font-size: $accent;
 		margin: 7px;
 	}
 	p {
-		font-size: $font-size-body;
+		font-size: $body;
 		margin: 7px;
 	}
 }
@@ -109,7 +109,7 @@
 		padding: .5rem;
 	}
 	p {
-		font-size: $font-size-body;
+		font-size: $body;
 		margin: 7px;
 		padding: .5rem;
 	}
@@ -157,14 +157,14 @@
 	align-content: space-between;
 	column-gap: 30px;
 	padding: 0px 30px 30px 30px;
-	h1 {
+	/*h1 {
 		display: flex;
 		width: 100%;
 		margin-top: 5px;
 		justify-content: center;
 		align-content: space-around;
 		color: $blue-dark;
-	}
+	}*/
 }
 /*card.1*/
 .one {
