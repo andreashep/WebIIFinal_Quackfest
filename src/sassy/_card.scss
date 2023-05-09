@@ -124,47 +124,28 @@
 }
 
 /*div for .card*/
-.hd_cards_div {
+
+
+/*hd cards div*/
+.hd_cards {
 	display: flex;
 	flex-flow: row wrap;
-	min-height: 525px;
-	min-width: 100vw;
+	height: 525px;
+	width: 95vw;
 	background-color: $white;
 	border: 3px double rgb(81, 39, 39);
 	justify-content: space-around;
 	align-content: space-between;
-	column-gap: 30px;
+	column-gap: 20px;
 	padding: 0px 30px 30px 30px;
 	h1 {
 		display: flex;
 		width: 100%;
-		margin-top: 5px;
-		justify-content: center;
-		align-content: space-around;
-		color: $cream;
-	}
-}
-
-/*hd cards div*/
-.hd_cards_div {
-	display: flex;
-	flex-flow: row wrap;
-	min-height: 525px;
-	min-width: 100vw;
-	background-color: $white;
-	border: 3px double rgb(81, 39, 39);
-	justify-content: space-around;
-	align-content: space-between;
-	column-gap: 30px;
-	padding: 0px 30px 30px 30px;
-	/*h1 {
-		display: flex;
-		width: 100%;
-		margin-top: 5px;
+		margin-top: 25px;
 		justify-content: center;
 		align-content: space-around;
 		color: $blue-dark;
-	}*/
+	}
 }
 /*card.1*/
 .one {
@@ -260,5 +241,60 @@
 img {
 	&:hover {
 		filter: drop-shadow(3px 3px 3px black);
+	}
+}
+
+.events {
+	display: flex;
+	background-color: $teal-mid;
+	padding: 25px;
+	flex-flow: row wrap;
+}
+.event {
+	display: flex;
+	flex-flow: row wrap;
+	width: 40vw;
+	justify-content: space-around;
+	align-content: space-around;
+	background-color: $white;
+	border: 2px solid rgb(81, 39, 39);
+	padding: 15px;
+	margin: 10px auto;
+	&:hover {
+		filter: drop-shadow(3px 3px 3px black);
+	}
+	h3 {
+		margin: 15px;
+	}
+	img {
+		height: 150px;
+		margin: 15px;
+		align-content: center;
+		filter: drop-shadow(3px 3px 3px black);
+		&:hover {
+			filter: drop-shadow(3px 3px 3px black);
+		}
+	}
+}
+/*event mobile and tablet*/
+@media (min-width: 480px) {
+	.event-photo {
+	  flex: 0 0 50%;
+	  max-width: 50%;
+	}
+
+	.event {
+	  justify-content: space-between;
+	}
+  }
+
+  @media (min-width: 768px) {
+	.event-photo {
+	  flex: 0 0 33.33%;
+	  max-width: 33.33%;
+	}
+
+	.event {
+	  justify-content: flex-start;
 	}
 }

@@ -68,7 +68,7 @@ h2 {
 
 h3 {
   font-family: "Dancing Script", cursive;
-  font-size: 18px;
+  font-size: 21px;
 }
 
 p {
@@ -95,7 +95,9 @@ blockquote {
 body {
   display: flex;
   height: 100vw;
+  width: 95vw;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 /*background-image hero*/
@@ -103,24 +105,28 @@ body {
   display: flex;
   background-image: url("../public/components/images/hero.duck.jpeg");
   background-size: cover;
-  height: 600px;
-  width: 100vw;
   background-repeat: no-repeat;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   border: 3px solid rgb(0, 0, 0);
-  padding: 100px auto;
-  position: relative;
+  padding: 25px auto;
+  margin: 25px auto;
+}
+.hero_1 .hero_img {
+  display: flex;
+  height: 600px;
+  width: 800px;
+  border: 3px solid rgb(11, 38, 58);
 }
 .hero_1 .hero-text {
   display: flex;
   border: 3px solid rgb(11, 38, 58);
   flex-direction: column;
-  height: 200px;
-  width: 200px;
+  height: 600px;
+  width: 2fr;
   justify-content: center;
   align-items: center;
-  margin: 7% auto;
+  margin: 7% 7%;
   color: rgb(11, 38, 58);
 }
 .hero_1 .hero-text h3 {
@@ -650,47 +656,26 @@ ul {
 }
 
 /*div for .card*/
-.hd_cards_div {
+/*hd cards div*/
+.hd_cards {
   display: flex;
   flex-flow: row wrap;
-  min-height: 525px;
-  min-width: 100vw;
+  height: 525px;
+  width: 95vw;
   background-color: rgb(255, 255, 255);
   border: 3px double rgb(81, 39, 39);
   justify-content: space-around;
   align-content: space-between;
-  column-gap: 30px;
+  column-gap: 20px;
   padding: 0px 30px 30px 30px;
 }
-.hd_cards_div h1 {
+.hd_cards h1 {
   display: flex;
   width: 100%;
-  margin-top: 5px;
+  margin-top: 25px;
   justify-content: center;
   align-content: space-around;
-  color: rgb(252, 245, 235);
-}
-
-/*hd cards div*/
-.hd_cards_div {
-  display: flex;
-  flex-flow: row wrap;
-  min-height: 525px;
-  min-width: 100vw;
-  background-color: rgb(255, 255, 255);
-  border: 3px double rgb(81, 39, 39);
-  justify-content: space-around;
-  align-content: space-between;
-  column-gap: 30px;
-  padding: 0px 30px 30px 30px;
-  /*h1 {
-  	display: flex;
-  	width: 100%;
-  	margin-top: 5px;
-  	justify-content: center;
-  	align-content: space-around;
-  	color: $blue-dark;
-  }*/
+  color: rgb(11, 38, 58);
 }
 
 /*card.1*/
@@ -781,6 +766,59 @@ img:hover {
   filter: drop-shadow(3px 3px 3px black);
 }
 
+.events {
+  display: flex;
+  background-color: #00b394;
+  padding: 25px;
+  flex-flow: row wrap;
+}
+
+.event {
+  display: flex;
+  flex-flow: row wrap;
+  width: 40vw;
+  justify-content: space-around;
+  align-content: space-around;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(81, 39, 39);
+  padding: 15px;
+  margin: 10px auto;
+}
+.event:hover {
+  filter: drop-shadow(3px 3px 3px black);
+}
+.event h3 {
+  margin: 15px;
+}
+.event img {
+  height: 150px;
+  margin: 15px;
+  align-content: center;
+  filter: drop-shadow(3px 3px 3px black);
+}
+.event img:hover {
+  filter: drop-shadow(3px 3px 3px black);
+}
+
+/*event mobile and tablet*/
+@media (min-width: 480px) {
+  .event-photo {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .event {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 768px) {
+  .event-photo {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+  .event {
+    justify-content: flex-start;
+  }
+}
 .ftr-container {
   display: flex;
   flex-direction: column;
@@ -791,9 +829,9 @@ img:hover {
   display: flex;
   width: 100vw;
   height: 200px;
-  background: rgb(11, 38, 58);
+  background: #00b394;
   color: rgb(255, 255, 255);
-  padding: 2rem 0;
+  padding: 25px 0;
   text-align: center;
   margin: 30px 0;
 }
@@ -807,12 +845,10 @@ img:hover {
   margin: 0 auto;
 }
 .footer1 .contact-info h3 {
-  font-size: 2rem;
   font-weight: 700;
   margin: 0;
 }
 .footer1 .contact-info p {
-  font-size: 1.5rem;
   font-weight: 400;
   margin: 0;
 }
@@ -850,7 +886,7 @@ img:hover {
   color: rgb(0, 0, 0);
   text-align: center;
   line-height: 100px;
-  font-size: 2rem;
+  font-size: 16px;
   font-weight: 700;
 }
 .footer1 .logo-ftr1 h3 {
@@ -1037,21 +1073,14 @@ img:hover {
 /*end of footer 2*/
 /*header 1*/
 /* Desktop styles */
-.header1 {
-  display: flex;
-  width: 100vw;
-  height: 200px;
-  flex-direction: row;
-  border: 1px solid rgb(0, 0, 0);
-}
-
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 95vw;
   height: 300px;
   border: 1px solid rgb(0, 0, 0);
+  background-color: #f7d000;
   margin: 0;
 }
 
@@ -1069,10 +1098,10 @@ header {
   display: flex;
 }
 .header-nav ul li {
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 .header-nav ul li:last-child {
-  margin-right: 0;
+  margin-right: 1rem;
 }
 .header-nav ul a {
   text-decoration: none;

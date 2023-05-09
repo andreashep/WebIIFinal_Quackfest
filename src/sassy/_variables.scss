@@ -14,6 +14,7 @@ $silver: #cccccc;
 $grey-dark: #333;
 $grey-darker: #222;
 // Quackfest colors
+$yellow-bright: #fff200;
 $yellow: #f7d000;
 $yellow-dark: #f7b000;
 $blue-bright: #00a2ff;
@@ -25,7 +26,6 @@ $teal-dark: #007664;
 
 // font
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap');
-//@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Serif&family=Source+Sans+Pro:wght@300&display=swap');
 
 /* Define font families */
 $header: 'Dancing Script', cursive;
@@ -50,7 +50,7 @@ h2 {
 
 h3 {
     font-family: $header;
-    font-size: 18px;
+    font-size: 21px;
 }
 p {
     font-family: $body;

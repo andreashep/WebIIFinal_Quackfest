@@ -1,7 +1,9 @@
 body {
 	display: flex;
 	height: 100vw;
+	width: 95vw;
 	flex-direction: column;
+	margin: 0 auto;
 }
 
 /*background-image hero*/
@@ -9,24 +11,29 @@ body {
 	display: flex;
 	background-image: url("../public/components/images/hero.duck.jpeg");
 	background-size: cover;
-	height: 600px;
-	width: 100vw;
 	background-repeat: no-repeat;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	border: 3px solid $black;
-	padding: 100px auto;
-	position: relative;
+	padding: 25px auto;
+	margin: 25px auto;
+
+	.hero_img {
+		display: flex;
+		height: 600px;
+		width: 800px;
+		border: 3px solid $blue-dark;
+	}
 
 	.hero-text {
 		display: flex;
 		border: 3px solid $blue-dark;
 		flex-direction: column;
-		height: 200px;
-		width: 200px;
+		height: 600px;
+		width: 2fr;
 		justify-content: center;
 		align-items: center;
-		margin: 7% auto;
+		margin: 7% 7%;
 		color: $blue-dark;
 
 		h3 {
