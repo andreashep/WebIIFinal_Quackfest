@@ -1,0 +1,264 @@
+
+
+
+/* On mouse-over, add a deeper shadow */
+/* Add some padding inside the card container */
+/* Add rounded corners to the top left and the top right corner of the image */
+
+/*div for cards 1&2*/
+.examples {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	border: 1px solid black;
+	padding: 25px;
+	height: 300px;
+	width: 100vw;
+}
+/*card 1*/
+.card1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 3px;
+	border: 1px solid black;
+	width: 250px;
+	height: 300px;
+	padding: 7px;
+	box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	img {
+		height: 150px;
+		width: 150px;
+		margin: 20px;
+	}
+	&:hover {
+		box-shadow: 8px 8px 16px 0 rgba(0,0,0,0.2);
+	}
+	h3 {
+		margin: 7px;
+		font-size: $font-size-accent;
+	}
+	p {
+		margin: 7px;
+		font-size: $font-size-body;
+	}
+}
+/*text container*/
+.container1 {
+	padding: 2px 16px;
+}
+
+
+/*card 2*/
+.card2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 3px;
+	border: 1px solid black;
+	width: 250px;
+	height: 300px;
+	box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	border-radius: 5px;
+	&:hover {
+		box-shadow: 8px 8px 16px 0 rgba(0,0,0,0.2);
+	}
+	img {
+		height: 150px;
+		width: 150px;
+		margin: 20px;
+		border-radius: 5px 5px 0 0;
+	}
+	h3 {
+		font-size: $font-size-accent;
+		margin: 7px;
+	}
+	p {
+		font-size: $font-size-body;
+		margin: 7px;
+	}
+}
+
+/*div for .card*/
+.detailed_cards {
+	display: flex;
+	flex-direction: row;
+	grid-template-columns: auto-fill, minmax(230px, 1fr);
+	grid-gap: 20px;
+	width: 100vw;
+}
+/*card*/
+.card {
+	display: grid;
+	grid-template-rows: max-content 200px 1fr;
+	border: solid 1px black;
+	img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+	h2 {
+		
+		margin: 7px;
+		padding: .5rem;
+	}
+	p {
+		font-size: $font-size-body;
+		margin: 7px;
+		padding: .5rem;
+	}
+	.content {
+		padding: .5rem;
+	}
+	footer {
+		background-color: $blue-dark;
+		color: $cream;
+		padding: .5rem;
+	}
+}
+
+/*div for .card*/
+.hd_cards_div {
+	display: flex;
+	flex-flow: row wrap;
+	min-height: 525px;
+	min-width: 100vw;
+	background-color: $white;
+	border: 3px double rgb(81, 39, 39);
+	justify-content: space-around;
+	align-content: space-between;
+	column-gap: 30px;
+	padding: 0px 30px 30px 30px;
+	h1 {
+		display: flex;
+		width: 100%;
+		margin-top: 5px;
+		justify-content: center;
+		align-content: space-around;
+		color: $cream;
+	}
+}
+
+/*hd cards div*/
+.hd_cards_div {
+	display: flex;
+	flex-flow: row wrap;
+	min-height: 525px;
+	min-width: 100vw;
+	background-color: $white;
+	border: 3px double rgb(81, 39, 39);
+	justify-content: space-around;
+	align-content: space-between;
+	column-gap: 30px;
+	padding: 0px 30px 30px 30px;
+	h1 {
+		display: flex;
+		width: 100%;
+		margin-top: 5px;
+		justify-content: center;
+		align-content: space-around;
+		color: $blue-dark;
+	}
+}
+/*card.1*/
+.one {
+	display: flex;
+	flex-basis: 20%;
+	height: 80%;
+	flex-flow: row wrap;
+	background-color: $white;
+	border: 2px solid rgb(81, 39, 39);
+	text-align: center;
+	justify-content: center;
+	align-content: space-around;
+	padding: 15px;
+	a {
+		&:hover {
+			filter: drop-shadow(3px 3px 3px black);
+		}
+	}
+	img {
+		height: 150px;
+		margin: 15px;
+		align-content: center;
+		filter: drop-shadow(3px 3px 3px black);
+		
+	}
+	h3 {
+		margin: 15px;
+	}
+}
+
+/*card.2*/
+.two {
+	display: flex;
+	flex-basis: 25%;
+	height: 80%;
+	flex-flow: row wrap;
+	background-color: $white;
+	border: 2px solid rgb(81, 39, 39);
+	text-align: center;
+	justify-content: center;
+	align-content: space-around;
+	padding: 15px;
+	a {
+		&:hover {
+			filter: drop-shadow(3px 3px 3px black);
+		}
+	}
+	h3 {
+		margin: 15px;
+	}	
+	img {
+		height: 150px;
+		margin: 15px;
+		align-content: center;
+		filter: drop-shadow(3px 3px 3px black);
+		&:hover {
+			filter: drop-shadow(3px 3px 3px black);
+		}
+	}
+}
+
+/*card.3*/
+.three {
+	display: flex;
+	flex-basis: 20%;
+	height: 80%;
+	flex-flow: row wrap;
+	background-color: $white;
+	border: 2px solid rgb(81, 39, 39);
+	text-align: center;
+	justify-content: center;
+	align-content: space-around;
+	padding: 15px;
+	a {
+		&:hover {
+			filter: drop-shadow(3px 3px 3px black);
+		}
+	}
+	h3 {
+		margin: 15px;
+	}
+	img {
+		height: 150px;
+		margin: 15px;
+		align-content: center;
+		filter: drop-shadow(3px 3px 3px black);
+		&:hover {
+			filter: drop-shadow(3px 3px 3px black);
+		}
+	}
+}
+
+img {
+	&:hover {
+		filter: drop-shadow(3px 3px 3px black);
+	}
+}
