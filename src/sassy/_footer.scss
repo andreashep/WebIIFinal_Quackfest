@@ -6,7 +6,7 @@
 
 .footer1 {
     display: flex;
-    width: 100vw;
+    width: 95vw;
     height: 200px;
     background: $teal-mid;
     color: $white;
@@ -80,7 +80,7 @@
     }
     .social-icons {
         display: flex;
-        flex-direction: row;        
+        flex-flow: row wrap;        
         width: 25%;
         border: 1px solid $white;
         justify-content: space-around;

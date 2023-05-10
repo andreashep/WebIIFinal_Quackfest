@@ -58,12 +58,12 @@ h1, h2, h3 {
 
 h1 {
   font-family: "Dancing Script", cursive;
-  font-size: 36px;
+  font-size: 48px;
 }
 
 h2 {
   font-family: "Dancing Script", cursive;
-  font-size: 24px;
+  font-size: 36px;
 }
 
 h3 {
@@ -106,28 +106,22 @@ body {
   background-image: url("../public/components/images/hero.duck.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  justify-content: space-around;
-  align-items: center;
-  border: 3px solid rgb(0, 0, 0);
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 800px;
+  width: 95vw;
   padding: 25px auto;
-  margin: 25px auto;
-}
-.hero_1 .hero_img {
-  display: flex;
-  height: 600px;
-  width: 800px;
-  border: 3px solid rgb(11, 38, 58);
+  margin: auto;
 }
 .hero_1 .hero-text {
   display: flex;
-  border: 3px solid rgb(11, 38, 58);
   flex-direction: column;
-  height: 600px;
-  width: 2fr;
-  justify-content: center;
+  height: 200px;
+  width: 25%;
+  justify-content: space-around;
   align-items: center;
-  margin: 7% 7%;
-  color: rgb(11, 38, 58);
+  margin: 25px 50% 25px 25px;
+  color: rgb(255, 255, 255);
 }
 .hero_1 .hero-text h3 {
   margin-bottom: 10px;
@@ -302,11 +296,11 @@ ul {
   display: flex;
   background-color: rgb(252, 245, 235);
   color: rgb(11, 38, 58);
-  margin: 50px;
+  margin: 25px;
   width: 150px;
   height: 35px;
   border: 0.5px solid rgb(81, 49, 39);
-  border-radius: 25px;
+  border-radius: 5px;
   justify-content: center;
   align-content: center;
   padding: 5px;
@@ -336,7 +330,7 @@ ul {
   width: 100px;
   height: 35px;
   border: 0.5px solid rgb(81, 49, 39);
-  border-radius: 25px;
+  border-radius: 5px;
   font-size: 16px;
   justify-content: center;
   align-items: center;
@@ -661,9 +655,8 @@ ul {
   display: flex;
   flex-flow: row wrap;
   height: 525px;
-  width: 95vw;
-  background-color: rgb(255, 255, 255);
-  border: 3px double rgb(81, 39, 39);
+  width: 92vw;
+  background-color: #00a2ff;
   justify-content: space-around;
   align-content: space-between;
   column-gap: 20px;
@@ -766,11 +759,186 @@ img:hover {
   filter: drop-shadow(3px 3px 3px black);
 }
 
+.four {
+  display: flex;
+  flex-basis: 20%;
+  height: 80%;
+  flex-flow: row wrap;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(81, 39, 39);
+  text-align: center;
+  justify-content: center;
+  align-content: space-around;
+  padding: 15px;
+}
+.four a:hover {
+  filter: drop-shadow(3px 3px 3px black);
+}
+.four h3 {
+  margin: 15px;
+}
+.four img {
+  height: 150px;
+  margin: 15px;
+  align-content: center;
+  filter: drop-shadow(3px 3px 3px black);
+}
+.four img:hover {
+  filter: drop-shadow(3px 3px 3px black);
+}
+
+/*pod*/
+.pod {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-flow: row wrap;
+  height: 525px;
+  width: 92vw;
+  border: 3px double rgb(81, 49, 39);
+  justify-content: space-around;
+  align-content: space-between;
+  column-gap: 30px;
+  padding: 10px 30px 30px 30px;
+}
+.pod h1 {
+  display: flex;
+  width: 100%;
+  margin-top: 5px;
+  justify-content: center;
+  align-content: center;
+  color: rgb(11, 38, 58);
+}
+
+.one {
+  display: flex;
+  flex-basis: 20%;
+  height: 425px;
+  flex-flow: row wrap;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(81, 49, 39);
+  text-align: center;
+  justify-content: center;
+  align-content: space-around;
+  padding: 15px;
+}
+.one img {
+  height: 150px;
+  margin: 10px;
+  align-content: center;
+  filter: drop-shadow(3px 3px 3px black);
+}
+
+.two {
+  display: flex;
+  flex-basis: 25%;
+  height: 425px;
+  flex-flow: row wrap;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(81, 49, 39);
+  text-align: center;
+  justify-content: center;
+  align-content: space-around;
+  padding: 15px;
+}
+.two p {
+  margin: 25px;
+}
+.two img {
+  height: 150px;
+  margin: 10px;
+  align-content: center;
+  filter: drop-shadow(3px 3px 3px black);
+}
+
+.three {
+  display: flex;
+  flex-basis: 20%;
+  height: 425px;
+  flex-flow: row wrap;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(81, 49, 39);
+  text-align: center;
+  justify-content: center;
+  align-content: space-around;
+  padding: 15px;
+}
+.three img {
+  height: 150px;
+  margin: 10px;
+  align-content: center;
+  filter: drop-shadow(3px 3px 3px black);
+}
+
+button {
+  display: flex;
+  background-color: #00a2ff;
+  min-width: 150px;
+  min-height: 35px;
+  border: 0.5px solid rgb(81, 49, 39);
+  border-radius: 25px;
+  justify-content: center;
+  text-align: center;
+  margin: 30px;
+}
+button:hover {
+  background-color: #f7d000;
+  color: rgb(0, 0, 0);
+  filter: drop-shadow(3px 3px 3px black);
+}
+button:active {
+  background-color: #f7b000;
+  color: rgb(0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 12pt;
+  padding: 12px 20px;
+}
+a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 25px;
+}
+a:active {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+img:hover {
+  filter: drop-shadow(3px 3px 3px black);
+}
+
+img:hover {
+  filter: drop-shadow(3px 3px 3px black);
+}
+
 .events {
   display: flex;
   background-color: #00b394;
   padding: 25px;
   flex-flow: row wrap;
+}
+.events .gallery {
+  display: flex;
+  width: 95vw;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+.events .gallery a {
+  display: flex;
+  width: 25vw;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.events .gallery a:hover {
+  filter: drop-shadow(3px 3px 3px black);
 }
 
 .event {
@@ -780,6 +948,7 @@ img:hover {
   justify-content: space-around;
   align-content: space-around;
   background-color: rgb(255, 255, 255);
+  border-radius: 5px;
   border: 2px solid rgb(81, 39, 39);
   padding: 15px;
   margin: 10px auto;
@@ -792,12 +961,20 @@ img:hover {
 }
 .event img {
   height: 150px;
-  margin: 15px;
+  margin: 15px 20px 15px 15px;
   align-content: center;
   filter: drop-shadow(3px 3px 3px black);
 }
 .event img:hover {
   filter: drop-shadow(3px 3px 3px black);
+}
+.event .event-details {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  width: 50%;
+  margin: 0 auto;
 }
 
 /*event mobile and tablet*/
@@ -827,7 +1004,7 @@ img:hover {
 
 .footer1 {
   display: flex;
-  width: 100vw;
+  width: 95vw;
   height: 200px;
   background: #00b394;
   color: rgb(255, 255, 255);
@@ -902,7 +1079,7 @@ img:hover {
 }
 .footer1 .social-icons {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   width: 25%;
   border: 1px solid rgb(255, 255, 255);
   justify-content: space-around;
@@ -1083,29 +1260,36 @@ header {
   background-color: #f7d000;
   margin: 0;
 }
-
-.header-logo {
-  width: 20%;
-  height: 80%;
-  border: 1px solid rgb(0, 0, 0);
-  font-size: 2rem;
-  margin: 20px;
-  justify-content: center;
-  align-items: center;
+header .header-accent {
+  width: 90vw;
+  display: flex;
+  height: 30%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
 }
-
-.header-nav ul {
+header .header-nav ul {
   display: flex;
 }
-.header-nav ul li {
-  margin-right: 1.5rem;
+header .header-nav ul li {
+  justify-content: center;
 }
-.header-nav ul li:last-child {
-  margin-right: 1rem;
+header .header-nav ul li:last-child {
+  margin-right: 3rem;
 }
-.header-nav ul a {
+header .header-nav ul a {
   text-decoration: none;
   color: rgb(0, 0, 0);
+}
+
+.header-logo {
+  display: flex;
+}
+.header-logo img {
+  width: 250px;
+  height: 250px;
+  margin: 100px;
+  justify-content: center;
+  align-items: center;
 }
 
 .hamburger-menu {
@@ -1134,6 +1318,7 @@ header {
     display: block;
     font-size: 2rem;
     background-color: transparent;
+    color: rgb(255, 255, 255);
     border: none;
     cursor: pointer;
   }

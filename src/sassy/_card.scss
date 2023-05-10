@@ -131,9 +131,9 @@
 	display: flex;
 	flex-flow: row wrap;
 	height: 525px;
-	width: 95vw;
-	background-color: $white;
-	border: 3px double rgb(81, 39, 39);
+	width: 92vw;
+	background-color: $blue-bright;
+	
 	justify-content: space-around;
 	align-content: space-between;
 	column-gap: 20px;
@@ -243,25 +243,21 @@ img {
 		filter: drop-shadow(3px 3px 3px black);
 	}
 }
-
-.events {
+.four {
 	display: flex;
-	background-color: $teal-mid;
-	padding: 25px;
+	flex-basis: 20%;
+	height: 80%;
 	flex-flow: row wrap;
-}
-.event {
-	display: flex;
-	flex-flow: row wrap;
-	width: 40vw;
-	justify-content: space-around;
-	align-content: space-around;
 	background-color: $white;
 	border: 2px solid rgb(81, 39, 39);
+	text-align: center;
+	justify-content: center;
+	align-content: space-around;
 	padding: 15px;
-	margin: 10px auto;
-	&:hover {
-		filter: drop-shadow(3px 3px 3px black);
+	a {
+		&:hover {
+			filter: drop-shadow(3px 3px 3px black);
+		}
 	}
 	h3 {
 		margin: 15px;
@@ -276,6 +272,197 @@ img {
 		}
 	}
 }
+/*pod*/
+.pod {
+	background-color: $white;
+	display: flex;
+	flex-flow: row wrap;
+	height: 525px;
+	width: 92vw;
+	border: 3px double rgb(81, 49, 39);
+	justify-content: space-around;
+	align-content: space-between;
+	column-gap: 30px;
+	padding: 10px 30px 30px 030px;
+	h1 {
+		display: flex;
+		width: 100%;
+		margin-top: 5px;
+		justify-content: center;
+		align-content: center;
+		color: $blue-dark;
+	}
+}
+.one {
+	display: flex;
+	flex-basis: 20%;
+	height: 425px;
+	flex-flow: row wrap;
+	background-color: $white;
+	border: 2px solid rgb(81, 49, 39);
+	text-align: center;
+	justify-content: center;
+	align-content: space-around;
+	padding: 15px;
+	img {
+		height: 150px;
+		margin: 10px;
+		align-content: center;
+		filter: drop-shadow(3px 3px 3px black);
+	}
+}
+.two {
+	display: flex;
+	flex-basis: 25%;
+	height: 425px;
+	flex-flow: row wrap;
+	background-color: $white;
+	border: 2px solid rgb(81, 49, 39);
+	text-align: center;
+	justify-content: center;
+	align-content: space-around;
+	padding: 15px;
+	p {
+		margin: 25px;
+	}
+	img {
+		height: 150px;
+		margin: 10px;
+		align-content: center;
+		filter: drop-shadow(3px 3px 3px black);
+	}
+}
+.three {
+	display: flex;
+	flex-basis: 20%;
+	height: 425px;
+	flex-flow: row wrap;
+	background-color: $white;
+	border: 2px solid rgb(81, 49, 39);
+	text-align: center;
+	justify-content: center;
+	align-content: space-around;
+	padding: 15px;
+	img {
+		height: 150px;
+		margin: 10px;
+		align-content: center;
+		filter: drop-shadow(3px 3px 3px black);
+	}
+}
+button {
+	display: flex;
+	background-color: $blue-bright;
+	min-width: 150px;
+	min-height: 35px;
+	border: .5px solid rgb(81, 49, 39);
+	border-radius: 25px;
+	justify-content: center;
+	text-align: center;
+	margin: 30px;
+	&:hover {
+		background-color: $yellow;
+		color: $black;
+		filter: drop-shadow(3px 3px 3px black);
+	}
+	&:active {
+		background-color: $yellow-dark;
+		color: $black;
+	}
+}
+a {
+	text-decoration: none;
+	color: $black;
+	font-size: 12pt;
+	padding: 12px 20px;
+	&:hover {
+		background-color: $white;
+		color: $black;
+		border-radius: 25px;
+	}
+	&:active {
+		color: $black;
+		background-color: $white;
+	}
+}
+img {
+	&:hover {
+		filter: drop-shadow(3px 3px 3px black);
+	}
+}
+
+
+img {
+	&:hover {
+		filter: drop-shadow(3px 3px 3px black);
+	}
+}
+
+.events {
+	display: flex;
+	background-color: $teal-mid;
+	padding: 25px;
+	flex-flow: row wrap;
+	
+	.gallery {
+		display: flex;
+		width: 95vw;
+		justify-content: center;
+		align-items: center;
+		margin: 10px auto;
+		a {
+			display: flex;
+			width: 25vw;
+			height: 40px;
+			background-color: $white;
+			border-radius: 5px;
+			justify-content: center;
+			text-decoration: none;
+			color: $black;
+			&:hover {
+				filter: drop-shadow(3px 3px 3px black);
+			}
+		
+		}
+	}
+}
+.event {
+	display: flex;
+	flex-flow: row wrap;
+	width: 40vw;
+	justify-content: space-around;
+	align-content: space-around;
+	background-color: $white;
+	border-radius: 5px;
+	border: 2px solid rgb(81, 39, 39);
+	padding: 15px;
+	margin: 10px auto;
+	&:hover {
+		filter: drop-shadow(3px 3px 3px black);
+	}
+	h3 {
+		margin: 15px;
+	}
+	img {
+		height: 150px;
+		margin: 15px 20px 15px 15px;
+		align-content: center;
+		filter: drop-shadow(3px 3px 3px black);
+		&:hover {
+			filter: drop-shadow(3px 3px 3px black);
+		}
+	}
+	.event-details {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-content: center;
+		width: 50%;
+		margin: 0 auto;
+	}
+	
+}
+
 /*event mobile and tablet*/
 @media (min-width: 480px) {
 	.event-photo {
