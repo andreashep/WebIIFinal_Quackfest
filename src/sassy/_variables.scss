@@ -26,11 +26,11 @@ $teal-dark: #007664;
 
 // font
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap');
-
+@import url(href="https://use.typekit.net/qda2xul.css");
 /* Define font families */
-$header: 'Dancing Script', cursive;
+$header: 'Shelby', cursive;
 $body: 'Montserrat', sans-serif;
-$accent: 'Montserrat', san-serif;
+$accent: 'Montserrat', sans-serif;
 
 /* Apply font families to typography */
 h1, h2, h3 {
@@ -40,21 +40,32 @@ h1, h2, h3 {
 
 h1 {
     font-family: $header;
-    font-size: 48px;
+    font-size: 64px;
 }
 
 h2 {
     font-family: $header;
-    font-size: 36px;
+    font-size: 40px;
 }
 
 h3 {
     font-family: $header;
     font-size: 21px;
 }
+
+h4 {
+    font-family: $header;
+    font-size: 24px;
+}
+
+h5 {
+    font-family: $accent;
+    font-size: 16px;
+    font-style: italic;
+}
 p {
     font-family: $body;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
 }
 
@@ -75,7 +86,7 @@ blockquote {
 /*$font-size-header: 2rem;*/
 
 $body: 16px;
-$accent: 1.5rem;
+$accent: 16px;
 
 
 

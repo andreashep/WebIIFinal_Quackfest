@@ -11,13 +11,15 @@ header {
   background-color: $yellow;
   margin: 0;
   .header-accent {
+    display: flex;
     width: 90vw;
     display: flex;
     height: 30%;
     background-color: $black;
     border-radius: 5px;
+    align-items: center;
   }
-  .header-nav ul {
+ /* .header-nav ul {
     display: flex;
   
     & li {
@@ -32,7 +34,7 @@ header {
       text-decoration: none;
       color: $black;
     }
-  }
+  }*/
 }
 
 

@@ -12,12 +12,12 @@ body {
 	background-image: url("../public/components/images/hero.duck.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	justify-content: flex-start;
+	justify-content: space-around;
 	align-items: flex-start;
 	height: 800px;
 	width: 95vw;
 	
-	padding: 25px auto;
+	padding: 75px auto;
 	margin: auto;
 
 	
@@ -30,13 +30,23 @@ body {
 		width: 25%;
 		justify-content: space-around;
 		align-items: center;
-		margin: 25px 50% 25px 25px;
+		margin: 50px auto auto 10px;
 		color: $white;
 		
 
 		h3 {
 			margin-bottom: 10px;
 		}
+	}
+
+	.hero-tagline {
+		display: flex;
+		
+		height: 100px;
+		width: 60vw;
+		justify-self: center;
+		color: $white;
+		margin: 50px auto;
 	}
 
 

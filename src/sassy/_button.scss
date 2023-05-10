@@ -18,32 +18,40 @@ ul {
 /*default btn*/
 .btn {
 	display: flex;
-	background-color: $cream;
-	color: $blue-dark;
+	background-color: $white;
+	color: $yellow-dark;
 	margin: 25px;
-	width: 150px;
-	height: 35px;
-	border: .5px solid $brown-text;
+	min-width: 150px;
+	min-height: 35px;
+	
 	border-radius: 5px;
 	justify-content: center;
 	align-content: center;
 	padding: 5px;
 
 	a {
+		display: flex;
 		text-decoration: none;
 		align-self: center;
-		color: $blue-dark;
+		color: $yellow-dark;
+		&:hover {
+			width: 175px;
+			border-radius: 5px;
+			justify-content: center;
+			align-content: center;
+			color: $white;
+		}
 	}
 
 	&:hover {
-		color: $cream;
-		background-color: $blue-main;
+		color: $white;
+		background-color: $yellow;
 		filter: drop-shadow(3px 3px 3px black);
 	}
 
 	&:active {
-		color: $cream;
-		background-color: $blue-dark;
+		color: $white;
+		background-color: $yellow-dark;
 		filter: drop-shadow(3px 3px 3px black);
 	}
 }
@@ -52,12 +60,12 @@ ul {
 /*btn-small*/
 .btn-small {
 	display: flex;
-	background-color: $cream;
-	color: $blue-dark;
+	background-color: none;
+	color: $yellow-dark;
 	margin: 25px;
-	width: 100px;
-	height: 35px;
-	border: .5px solid $brown-text;
+	min-width: 100px;
+	min-height: 50px;
+	
 	border-radius: 5px;
 	font-size: 16px;
 	justify-content: center;
@@ -67,23 +75,26 @@ ul {
 	a {
 		display: flex;
 		text-decoration: none;
-		align-content: center;
+		align-self: center;
+		color: $yellow-dark;
 
 		&:hover {
-			width: 150px;
-			border-radius: 25px;
+			
+			border-radius: 5px;
+			justify-content: center;
 			align-content: center;
+			color: $white;
 		}
 	}
 
 	&:hover {
-		color: $cream;
-		background-color: $blue-main;
+		color: $white;
+		background-color: $yellow;
 		filter: drop-shadow(3px 3px 3px black);
 	}
 
 	&:active {
-		background-color: $blue-dark;
+		background-color: $yellow-dark;
 		color: $cream;
 		filter: drop-shadow(3px 3px 3px black);
 	}

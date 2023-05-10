@@ -127,7 +127,7 @@
 
 
 /*hd cards div*/
-.hd_cards {
+#hd_cards {
 	display: flex;
 	flex-flow: row wrap;
 	height: 525px;
@@ -144,7 +144,7 @@
 		margin-top: 25px;
 		justify-content: center;
 		align-content: space-around;
-		color: $blue-dark;
+		color: $white;
 	}
 }
 /*card.1*/
@@ -154,7 +154,8 @@
 	height: 80%;
 	flex-flow: row wrap;
 	background-color: $white;
-	border: 2px solid rgb(81, 39, 39);
+	color: $blue-dark;
+	border-radius: 5px;
 	text-align: center;
 	justify-content: center;
 	align-content: space-around;
@@ -183,7 +184,7 @@
 	height: 80%;
 	flex-flow: row wrap;
 	background-color: $white;
-	border: 2px solid rgb(81, 39, 39);
+	border-radius: 5px;
 	text-align: center;
 	justify-content: center;
 	align-content: space-around;
@@ -214,7 +215,7 @@
 	height: 80%;
 	flex-flow: row wrap;
 	background-color: $white;
-	border: 2px solid rgb(81, 39, 39);
+	border-radius: 5px;
 	text-align: center;
 	justify-content: center;
 	align-content: space-around;
@@ -273,7 +274,7 @@ img {
 	}
 }
 /*pod*/
-.pod {
+#pod {
 	background-color: $white;
 	display: flex;
 	flex-flow: row wrap;
@@ -293,7 +294,7 @@ img {
 		color: $blue-dark;
 	}
 }
-.one {
+.pone {
 	display: flex;
 	flex-basis: 20%;
 	height: 425px;
@@ -304,6 +305,9 @@ img {
 	justify-content: center;
 	align-content: space-around;
 	padding: 15px;
+	h2 {
+		margin: 25px;
+	}
 	img {
 		height: 150px;
 		margin: 10px;
@@ -311,7 +315,7 @@ img {
 		filter: drop-shadow(3px 3px 3px black);
 	}
 }
-.two {
+.ptwo {
 	display: flex;
 	flex-basis: 25%;
 	height: 425px;
@@ -322,7 +326,7 @@ img {
 	justify-content: center;
 	align-content: space-around;
 	padding: 15px;
-	p {
+	h2 {
 		margin: 25px;
 	}
 	img {
@@ -332,7 +336,7 @@ img {
 		filter: drop-shadow(3px 3px 3px black);
 	}
 }
-.three {
+.pthree {
 	display: flex;
 	flex-basis: 20%;
 	height: 425px;
@@ -343,6 +347,9 @@ img {
 	justify-content: center;
 	align-content: space-around;
 	padding: 15px;
+	h2 {
+		margin: 25px;
+	}
 	img {
 		height: 150px;
 		margin: 10px;
@@ -350,81 +357,14 @@ img {
 		filter: drop-shadow(3px 3px 3px black);
 	}
 }
-button {
-	display: flex;
-	background-color: $blue-bright;
-	min-width: 150px;
-	min-height: 35px;
-	border: .5px solid rgb(81, 49, 39);
-	border-radius: 25px;
-	justify-content: center;
-	text-align: center;
-	margin: 30px;
-	&:hover {
-		background-color: $yellow;
-		color: $black;
-		filter: drop-shadow(3px 3px 3px black);
-	}
-	&:active {
-		background-color: $yellow-dark;
-		color: $black;
-	}
-}
-a {
-	text-decoration: none;
-	color: $black;
-	font-size: 12pt;
-	padding: 12px 20px;
-	&:hover {
-		background-color: $white;
-		color: $black;
-		border-radius: 25px;
-	}
-	&:active {
-		color: $black;
-		background-color: $white;
-	}
-}
-img {
-	&:hover {
-		filter: drop-shadow(3px 3px 3px black);
-	}
-}
+/*end of pod*/
 
-
-img {
-	&:hover {
-		filter: drop-shadow(3px 3px 3px black);
-	}
-}
-
-.events {
+#events {
 	display: flex;
 	background-color: $teal-mid;
 	padding: 25px;
 	flex-flow: row wrap;
-	
-	.gallery {
-		display: flex;
-		width: 95vw;
-		justify-content: center;
-		align-items: center;
-		margin: 10px auto;
-		a {
-			display: flex;
-			width: 25vw;
-			height: 40px;
-			background-color: $white;
-			border-radius: 5px;
-			justify-content: center;
-			text-decoration: none;
-			color: $black;
-			&:hover {
-				filter: drop-shadow(3px 3px 3px black);
-			}
-		
-		}
-	}
+	justify-content: space-around;
 }
 .event {
 	display: flex;
@@ -440,11 +380,14 @@ img {
 	&:hover {
 		filter: drop-shadow(3px 3px 3px black);
 	}
-	h3 {
+
+	p {
 		margin: 15px;
 	}
+
 	img {
 		height: 150px;
+		width: auto;
 		margin: 15px 20px 15px 15px;
 		align-content: center;
 		filter: drop-shadow(3px 3px 3px black);
