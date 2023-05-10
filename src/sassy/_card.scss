@@ -125,7 +125,7 @@
 
 /*div for .card*/
 
-
+/**********************************/
 /*hd cards div*/
 #hd_cards {
 	display: flex;
@@ -148,7 +148,7 @@
 	}
 }
 /*card.1*/
-.one {
+.one, .two, .three, .four {
 	display: flex;
 	flex-basis: 20%;
 	height: 80%;
@@ -177,100 +177,32 @@
 	}
 }
 
-/*card.2*/
-.two {
-	display: flex;
-	flex-basis: 25%;
-	height: 80%;
-	flex-flow: row wrap;
-	background-color: $white;
-	border-radius: 5px;
-	text-align: center;
-	justify-content: center;
-	align-content: space-around;
-	padding: 15px;
-	a {
-		&:hover {
-			filter: drop-shadow(3px 3px 3px black);
-		}
+@media (max-width: 480px) {
+	#hd_cards {
+	  width: 95vw;
+	  padding: 0px 25px;
+	  height: auto;
+	  align-content: flex-start;
 	}
-	h3 {
-		margin: 15px;
-	}	
-	img {
-		height: 150px;
-		margin: 15px;
-		align-content: center;
-		filter: drop-shadow(3px 3px 3px black);
-		&:hover {
-			filter: drop-shadow(3px 3px 3px black);
-		}
-	}
-}
 
-/*card.3*/
-.three {
-	display: flex;
-	flex-basis: 20%;
-	height: 80%;
-	flex-flow: row wrap;
-	background-color: $white;
-	border-radius: 5px;
-	text-align: center;
-	justify-content: center;
-	align-content: space-around;
-	padding: 15px;
-	a {
-		&:hover {
-			filter: drop-shadow(3px 3px 3px black);
-		}
+	.one .two .three .four {
+	  flex-basis: 100%;
+	  height: auto;
+	  margin: 20px 0;
 	}
-	h3 {
-		margin: 15px;
-	}
-	img {
-		height: 150px;
-		margin: 15px;
-		align-content: center;
-		filter: drop-shadow(3px 3px 3px black);
-		&:hover {
-			filter: drop-shadow(3px 3px 3px black);
-		}
-	}
-}
+  }
 
-img {
-	&:hover {
-		filter: drop-shadow(3px 3px 3px black);
+  @media (max-width: 768px) {
+	#hd_cards {
+		width: 100%;
+		height: auto;
+		padding: 0px 15px 15px 15px;
 	}
-}
-.four {
-	display: flex;
-	flex-basis: 20%;
-	height: 80%;
-	flex-flow: row wrap;
-	background-color: $white;
-	border: 2px solid rgb(81, 39, 39);
-	text-align: center;
-	justify-content: center;
-	align-content: space-around;
-	padding: 15px;
-	a {
-		&:hover {
-			filter: drop-shadow(3px 3px 3px black);
-		}
-	}
-	h3 {
-		margin: 15px;
-	}
-	img {
-		height: 150px;
-		margin: 15px;
-		align-content: center;
-		filter: drop-shadow(3px 3px 3px black);
-		&:hover {
-			filter: drop-shadow(3px 3px 3px black);
-		}
+
+	.one .two .three .four {
+		flex-basis: 100%;
+		height: auto;
+		margin-bottom: 20px;
 	}
 }
 /*pod*/
@@ -280,7 +212,6 @@ img {
 	flex-flow: row wrap;
 	height: 525px;
 	width: 92vw;
-	border: 3px double rgb(81, 49, 39);
 	justify-content: space-around;
 	align-content: space-between;
 	column-gap: 30px;
@@ -294,13 +225,12 @@ img {
 		color: $blue-dark;
 	}
 }
-.pone {
+.pone, .ptwo, .pthree {
 	display: flex;
 	flex-basis: 20%;
 	height: 425px;
 	flex-flow: row wrap;
 	background-color: $white;
-	border: 2px solid rgb(81, 49, 39);
 	text-align: center;
 	justify-content: center;
 	align-content: space-around;
@@ -315,13 +245,12 @@ img {
 		filter: drop-shadow(3px 3px 3px black);
 	}
 }
-.ptwo {
+/*.ptwo {
 	display: flex;
 	flex-basis: 25%;
 	height: 425px;
 	flex-flow: row wrap;
 	background-color: $white;
-	border: 2px solid rgb(81, 49, 39);
 	text-align: center;
 	justify-content: center;
 	align-content: space-around;
@@ -342,7 +271,6 @@ img {
 	height: 425px;
 	flex-flow: row wrap;
 	background-color: $white;
-	border: 2px solid rgb(81, 49, 39);
 	text-align: center;
 	justify-content: center;
 	align-content: space-around;
@@ -355,6 +283,34 @@ img {
 		margin: 10px;
 		align-content: center;
 		filter: drop-shadow(3px 3px 3px black);
+	}
+}*/
+
+@media (max-width: 480px) {
+	#pod {
+		width: 100%;
+		padding: 0px 10px;
+		height: auto;
+		align-content: flex-start;
+	}
+
+	.pone .ptwo .pthree {
+		flex-basis: 100%;
+		height: auto;
+		margin-bottom: 20px;
+	}
+  }
+
+  @media (max-width: 768px) {
+	#pod {
+		width: 100%;
+		height: auto;
+		padding: 0px 15px 15px 15px;
+	}
+
+	.pone, .ptwo, .pthree {
+		flex-basis: 100%;
+		margin: 20px 0;
 	}
 }
 /*end of pod*/
@@ -374,8 +330,7 @@ img {
 	align-content: space-around;
 	background-color: $white;
 	border-radius: 5px;
-	border: 2px solid rgb(81, 39, 39);
-	padding: 15px;
+	padding: 25px 0px 15px 15px;
 	margin: 10px auto;
 	&:hover {
 		filter: drop-shadow(3px 3px 3px black);

@@ -61,22 +61,22 @@ ul {
 .btn-small {
 	display: flex;
 	background-color: none;
-	color: $yellow-dark;
+	color: $white;
 	margin: 25px;
-	min-width: 100px;
+	min-width: 120px;
 	min-height: 50px;
-	
 	border-radius: 5px;
 	font-size: 16px;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	padding: 7px;
 
 	a {
 		display: flex;
 		text-decoration: none;
 		align-self: center;
-		color: $yellow-dark;
+		color: $white;
 
 		&:hover {
 			
