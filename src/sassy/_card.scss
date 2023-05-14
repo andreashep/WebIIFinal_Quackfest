@@ -130,7 +130,7 @@
 #hd_cards {
 	display: flex;
 	flex-flow: row wrap;
-	height: 525px;
+	min-height: 525px;
 	width: 100vw;
 	background-color: $blue-bright;
 	
@@ -177,18 +177,20 @@
 	}
 }
 
+
+ 
 @media (max-width: 480px) {
 	#hd_cards {
-	  width: 95vw;
-	  padding: 0px 25px;
-	  height: auto;
-	  align-content: flex-start;
+		width: 100%;
+		padding: 0px 10px;
+		height: auto;
+		align-content: flex-start;
 	}
 
-	.one .two .three .four {
-	  flex-basis: 100%;
-	  height: auto;
-	  margin: 20px 0;
+	.one, .two, .three, .four {
+		flex-basis: 100%;
+		height: auto;
+		margin-bottom: 20px;
 	}
   }
 
@@ -199,12 +201,12 @@
 		padding: 0px 15px 15px 15px;
 	}
 
-	.one .two .three .four {
+	.one, .two, .three, .four {
 		flex-basis: 100%;
-		height: auto;
-		margin-bottom: 20px;
+		margin: 20px 0;
 	}
 }
+
 /*pod*/
 #pod {
 	background-color: $white;
@@ -330,56 +332,49 @@
 	align-content: space-around;
 	background-color: $white;
 	border-radius: 5px;
-	padding: 25px 0px 15px 15px;
+	padding: 25px 15px;
 	margin: 10px auto;
 	&:hover {
 		filter: drop-shadow(3px 3px 3px black);
 	}
-
-	p {
-		margin: 15px;
-	}
-
-	img {
-		height: 150px;
-		width: auto;
-		margin: 15px 20px 15px 15px;
-		align-content: center;
+}
+.event-photo {
+	display: flex;
+	height: 150px;
+	width: auto;
+	margin: 15px 20px;
+	padding: 10px;
+	align-content: center;
+	filter: drop-shadow(3px 3px 3px black);
+	&:hover {
 		filter: drop-shadow(3px 3px 3px black);
-		&:hover {
-			filter: drop-shadow(3px 3px 3px black);
-		}
 	}
-	.event-details {
-		display: flex;
-		flex-flow: column wrap;
-		justify-content: center;
-		align-content: center;
-		width: 50%;
-		margin: 0 auto;
+}
+.event-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	width: 50%;
+	margin: 0 auto;
+	p {
+		margin: 10px;
 	}
-	
 }
 
 /*event mobile and tablet*/
-@media (min-width: 480px) {
-	.event-photo {
-	  flex: 0 0 50%;
-	  max-width: 50%;
+@media (max-width: 480px) {
+	#events {
+		justify-content: center;
+		
 	}
-
 	.event {
-	  justify-content: space-between;
+		width: 90vw;
+	}
+	.event-photo {
+		width: 100%;
+	}
+	.event-details {
+		width: 100%;
 	}
   }
-
-  @media (min-width: 768px) {
-	.event-photo {
-	  flex: 0 0 33.33%;
-	  max-width: 33.33%;
-	}
-
-	.event {
-	  justify-content: flex-start;
-	}
-}
