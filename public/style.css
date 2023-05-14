@@ -257,7 +257,7 @@ body {
 }
 /*hero_3* desktop*/
 .hero_3 {
-  background-image: url("../public/components/images/1440_gradient_rectangle.jpg");
+  background-image: url("../components/images/1440_gradient_rectangle.jpg");
   background-size: cover;
   background-position: center;
   height: 80vh;
@@ -934,7 +934,7 @@ ul {
     width: 90vw;
   }
   .event-photo {
-    width: 100%;
+    width: 90%;
   }
   .event-details {
     width: 100%;
@@ -956,8 +956,6 @@ ul {
   padding: 25px;
   text-align: center;
   justify-content: space-around;
-  /*end of footer 1*/
-  /*footer 2*/
 }
 .footer1 .logo-ftr1 {
   display: flex;
@@ -1059,7 +1057,10 @@ ul {
     margin: 0 0.25rem;
   }
 }
-.footer1 .footer2 {
+
+/*end of footer 1*/
+/*footer 2*/
+.footer2 {
   display: flex;
   width: 100vw;
   height: 200px;
@@ -1069,7 +1070,7 @@ ul {
   text-align: center;
   margin: 30px 0;
 }
-.footer1 .footer2 .additional-info {
+.footer2 .additional-info {
   display: flex;
   flex-direction: column;
   width: 25%;
@@ -1078,17 +1079,17 @@ ul {
   align-items: center;
   margin: 0 auto;
 }
-.footer1 .footer2 .additional-info h3 {
+.footer2 .additional-info h3 {
   font-size: 2rem;
   font-weight: 700;
   margin: 0;
 }
-.footer1 .footer2 .additional-info p {
+.footer2 .additional-info p {
   font-size: 1.5rem;
   font-weight: 400;
   margin: 0;
 }
-.footer1 .footer2 .ftr2-center {
+.footer2 .ftr2-center {
   display: flex;
   flex-direction: column;
   width: 15%;
@@ -1097,18 +1098,18 @@ ul {
   align-items: center;
   margin: 0 auto;
 }
-.footer1 .footer2 .ftr2-center h3 {
+.footer2 .ftr2-center h3 {
   font-size: 2rem;
   font-weight: 700;
   margin: 0;
 }
-.footer1 .footer2 .ftr2-center p {
+.footer2 .ftr2-center p {
   width: 300px;
   font-size: 1.5rem;
   font-weight: 400;
   margin: 0;
 }
-.footer1 .footer2 .logo-ftr2 {
+.footer2 .logo-ftr2 {
   display: flex;
   width: 100px;
   height: 100px;
@@ -1124,20 +1125,20 @@ ul {
   font-size: 2rem;
   font-weight: 700;
 }
-.footer1 .footer2 .logo-ftr2 h3 {
+.footer2 .logo-ftr2 h3 {
   color: rgb(242, 235, 225);
   font-family: 16px;
   font-size: 2rem;
   font-weight: 700;
   margin: 0;
 }
-.footer1 .footer2 .logo-ftr2 p {
+.footer2 .logo-ftr2 p {
   color: rgb(0, 0, 0);
   font-size: 0.75rem;
   font-weight: 400;
   margin: 0;
 }
-.footer1 .footer2 .social-icons {
+.footer2 .social-icons {
   display: flex;
   flex-direction: row;
   width: 25%;
@@ -1146,76 +1147,76 @@ ul {
   align-items: center;
   margin: 0 auto;
 }
-.footer1 .footer2 .social-icons img {
+.footer2 .social-icons img {
   height: 40px;
   width: 40px;
   margin: 0 0.5rem;
 }
-.footer1 .footer2 .social-icons a {
+.footer2 .social-icons a {
   color: rgb(255, 255, 255);
   font-size: 1.5rem;
   margin: 0 0.5rem;
 }
-.footer1 .footer2 .social-icons a:hover {
+.footer2 .social-icons a:hover {
   border: 1px solid rgb(255, 255, 255);
 }
+
 @media (max-width: 480px) {
-  .footer1 .footer2 {
+  .footer2 {
     flex-direction: column;
     min-height: auto;
     justify-content: center;
   }
-  .footer1 .footer2 .logo-ftr2 {
+  .footer2 .logo-ftr2 {
     width: 100vw;
     margin: 0;
   }
-  .footer1 .footer2 .logo-ftr2 img {
+  .footer2 .logo-ftr2 img {
     height: 100px;
     width: 100px;
     margin: 0 auto;
   }
-  .footer1 #contact-info {
+  #contact-info {
     min-width: 100vw;
     margin: 0 auto;
   }
-  .footer1 .social-icons {
+  .social-icons {
     width: 100vw;
     margin: 0;
     justify-content: center;
     flex-direction: column;
   }
-  .footer1 .social-icons img {
+  .social-icons img {
     height: 30px;
     width: 30px;
     margin: 0 0.25rem;
   }
 }
 @media (max-width: 480px) {
-  .footer1 .footer2 {
+  .footer2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .footer1 .footer2 .contact-info {
+  .footer2 .contact-info {
     width: 100%;
     margin: 20px;
   }
-  .footer1 .footer2 .contact-info h3 {
+  .footer2 .contact-info h3 {
     font-size: 2rem;
   }
-  .footer1 .footer2 .contact-info p {
+  .footer2 .contact-info p {
     font-size: 1.25rem;
   }
-  .footer1 .footer2 .logo-ftr2 {
+  .footer2 .logo-ftr2 {
     width: 100%;
     margin: 20px;
   }
-  .footer1 .footer2 .social-icons {
+  .footer2 .social-icons {
     width: 100%;
     margin: 20px;
   }
 }
-
 /*header 1*/
 /* Desktop styles */
 header {
