@@ -28,6 +28,11 @@ ul {
 	justify-content: center;
 	align-content: center;
 	padding: 5px;
+	&:hover {
+		color: $white;
+		background-color: $yellow-dark;
+		filter: drop-shadow(3px 3px 3px black);
+	}
 
 	a {
 		display: flex;

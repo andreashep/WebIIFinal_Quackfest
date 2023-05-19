@@ -115,7 +115,7 @@ body {
 /*background-image hero*/
 .hero_1 {
   display: flex;
-  background-image: url("../public/components/images/hero.duck.jpeg");
+  background-image: url("../components/images/hero.duck.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: space-around;
@@ -341,6 +341,11 @@ ul {
   justify-content: center;
   align-content: center;
   padding: 5px;
+}
+.btn:hover {
+  color: rgb(255, 255, 255);
+  background-color: #f7b000;
+  filter: drop-shadow(3px 3px 3px black);
 }
 .btn a {
   display: flex;
@@ -1012,6 +1017,7 @@ ul {
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
+  padding: 35px;
 }
 .footer1 .social-icons img {
   height: 40px;
@@ -1025,6 +1031,10 @@ ul {
 }
 .footer1 .social-icons a:hover {
   filter: drop-shadow(3px 3px 3px black);
+}
+.footer1 .social-icons p {
+  width: 100%;
+  margin: 5px;
 }
 @media (max-width: 480px) {
   .footer1 .footer1 {

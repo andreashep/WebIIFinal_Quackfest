@@ -75,10 +75,10 @@
         display: flex;
         flex-flow: row wrap;
         width: 30vw;
-
         justify-content: space-around;
         align-items: center;
         margin: 0 auto;
+        padding: 35px;
 
         img {
             height: 40px;
@@ -93,7 +93,12 @@
             &:hover {
                 filter: drop-shadow(3px 3px 3px black);
         }
-    }
+        }
+
+        p {
+            width: 100%;
+            margin: 5px;
+        }
 
 }
 
