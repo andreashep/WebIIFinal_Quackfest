@@ -179,33 +179,7 @@
 
 
  
-@media (max-width: 480px) {
-	#hd_cards {
-		width: 100%;
-		padding: 0px 10px;
-		height: auto;
-		align-content: flex-start;
-	}
 
-	.one, .two, .three, .four {
-		flex-basis: 100%;
-		height: auto;
-		margin-bottom: 20px;
-	}
-  }
-
-  @media (max-width: 768px) {
-	#hd_cards {
-		width: 100%;
-		height: auto;
-		padding: 0px 15px 15px 15px;
-	}
-
-	.one, .two, .three, .four {
-		flex-basis: 100%;
-		margin: 20px 0;
-	}
-}
 
 /*pod*/
 #pod {
@@ -288,34 +262,7 @@
 	}
 }*/
 
-@media (max-width: 480px) {
-	#pod {
-		width: 100%;
-		padding: 0px 10px;
-		height: auto;
-		align-content: flex-start;
-	}
 
-	.pone .ptwo .pthree {
-		flex-basis: 100%;
-		height: auto;
-		margin-bottom: 20px;
-	}
-  }
-
-  @media (max-width: 768px) {
-	#pod {
-		width: 100%;
-		height: auto;
-		padding: 0px 15px 15px 15px;
-	}
-
-	.pone, .ptwo, .pthree {
-		flex-basis: 100%;
-		margin: 20px 0;
-	}
-}
-/*end of pod*/
 
 #events {
 	display: flex;
@@ -362,19 +309,3 @@
 	}
 }
 
-/*event mobile and tablet*/
-@media (max-width: 480px) {
-	#events {
-		justify-content: center;
-		
-	}
-	.event {
-		width: 90vw;
-	}
-	.event-photo {
-		width: 90%;
-	}
-	.event-details {
-		width: 100%;
-	}
-  }

@@ -101,45 +101,13 @@
         }
 
 }
-
-
-
-
-
-@media (max-width: 480px) {
-    .footer1 {
-       flex-direction: column;
-        min-height: auto;
-        justify-content: center;
-        .logo-ftr1 {
-            width: 100vw;
-            margin: 0;
-            img {
-                height: 100px;
-                width: 100px;
-                margin: 0 auto;
-            }
-        }
-    }
-
-    #contact-info {
-        min-width: 100vw;
-        margin: 0 auto;
-    }
-     .social-icons {
-        width: 100vw;
-        margin: 0;
-        justify-content: center;
-        flex-direction: column;
-
-        img {
-            height: 30px;
-            width: 30px;
-            margin: 0 0.25rem;
-        }
-    }
 }
-}
+
+
+
+
+
+
 
 
 /*end of footer 1*/
