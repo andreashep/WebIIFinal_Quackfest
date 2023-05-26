@@ -132,14 +132,14 @@ body {
   justify-content: space-around;
   align-items: center;
   margin: 100px auto auto 10px;
-  color: rgb(255, 255, 255);
+  color: rgb(11, 38, 58);
 }
 .hero_1 .hero-tagline {
   display: flex;
   height: 100px;
   width: 60vw;
   justify-self: center;
-  color: rgb(255, 255, 255);
+  color: rgb(11, 38, 58);
   margin: 50px auto;
 }
 
@@ -1141,7 +1141,7 @@ header {
 header .header-accent {
   display: flex;
   width: 50vw;
-  display: flex;
+  margin: 0 auto;
   height: 30%;
   justify-content: space-around;
   background-color: none;
@@ -1155,7 +1155,7 @@ header .header-accent {
 #header-logo img {
   width: 300px;
   height: 300px;
-  margin: 100px;
+  margin: 48px;
   justify-content: center;
   align-items: center;
 }
